@@ -5,7 +5,7 @@ document.getElementById("subsetForm").addEventListener("submit", function(event)
     var numbersInput = document.getElementById("numbers").value;
     var targetSumInput = parseFloat(document.getElementById("targetSum").value);
     
-    var numbers = numbersInput.split(" ").map(Number);
+    var numbers = numbersInput.split(",").map(Number);
     var subsets = generateSubsets(numbers, targetSumInput);
     
     var resultContainer = document.getElementById("resultContainer");
